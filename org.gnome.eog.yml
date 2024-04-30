@@ -218,6 +218,8 @@ modules:
           is-important: true
       - type: patch
         path: patches/eog-mime.patch
+      - type: patch
+        path: patches/appstream-developer.patch
 
   - name: eog-plugins
     buildsystem: meson
