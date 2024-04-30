@@ -1,0 +1,29 @@
+From 6cb92aba36d2bef44b33c05d854f6e961980e7ed Mon Sep 17 00:00:00 2001
+From: Manuel Huber <git@manuelhu.de>
+Date: Tue, 30 Apr 2024 11:48:02 +0200
+Subject: [PATCH] add developer info to appstream metadata
+
+as requested by flathub. This block is copied from evince's metadata
+file.
+---
+ data/eog.appdata.xml.in | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/data/eog.appdata.xml.in b/data/eog.appdata.xml.in
+index 6c3b620d..979b26e5 100644
+--- a/data/eog.appdata.xml.in
++++ b/data/eog.appdata.xml.in
+@@ -70,6 +70,11 @@
+     <release version="3.36.1" date="2020-04-09" />
+   </releases>
+   <project_group>GNOME</project_group>
++  <!-- developer_name tag deprecated with Appstream 1.0 -->
++  <developer_name>The GNOME Project</developer_name>
++  <developer id="org.gnome">
++    <name>The GNOME Project</name>
++  </developer>
+   <translation type="gettext">eog</translation>
+   <launchable type="desktop-id">org.gnome.eog.desktop</launchable>
+   <content_rating type="oars-1.1" />
+-- 
+2.44.0
